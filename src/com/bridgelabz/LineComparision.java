@@ -12,16 +12,34 @@ public class LineComparision {
         double x1 = scanner.nextDouble();
         System.out.print("Enter y1: ");
         double y1 = scanner.nextDouble();
-
         System.out.print("Enter x2: ");
         double x2 = scanner.nextDouble();
         System.out.print("Enter y2: ");
         double y2 = scanner.nextDouble();
 
+        System.out.print("Enter a1: ");
+        double a1 = scanner.nextDouble();
+        System.out.print("Enter a2: ");
+        double a2 = scanner.nextDouble();
+        System.out.print("Enter b1: ");
+        double b1 = scanner.nextDouble();
+        System.out.print("Enter b2: ");
+        double b2 = scanner.nextDouble();
 
-        double length = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+
+        double length1 = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+        double length2 = Math.sqrt(Math.pow(a2 - a1, 2) + Math.pow(b2 - b1, 2));
+
+        boolean result=length1==length2;
 
 
-        System.out.println("The length of the line segment is: " + length);
+        if (result == true)
+            System.out.println("Length of lines are same...");
+        else
+            System.out.println("Lines are not equals...");
+
+
+        System.out.println("The length1 of the line segment is: " + length1 );
+        System.out.println("The length2 of the line segment is: " + length2 );
     }
 }
