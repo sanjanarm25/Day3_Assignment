@@ -30,16 +30,19 @@ public class LineComparision {
         double length1 = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
         double length2 = Math.sqrt(Math.pow(a2 - a1, 2) + Math.pow(b2 - b1, 2));
 
-        boolean result=length1==length2;
-
-
-        if (result == true)
-            System.out.println("Length of lines are same...");
-        else
-            System.out.println("Lines are not equals...");
-
-
+//        boolean result=length1==length2;
         System.out.println("The length1 of the line segment is: " + length1 );
         System.out.println("The length2 of the line segment is: " + length2 );
+
+        if (length1>length2){
+            System.out.println("length1 is grater than length2");
+        }
+        else if(length1==length2){
+            System.out.println("Lines are  equals...");
+        }else {
+            System.out.println("length2 is is greater than length1");
+        }
+
+
     }
 }
